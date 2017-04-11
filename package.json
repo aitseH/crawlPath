@@ -1,0 +1,25 @@
+{
+  "name": "crawl-path",
+  "version": "0.0.1",
+  "main": "src/crawlPath",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --exec npm run babel-node --watch ./ -- src/index.js",
+    "build": "rm lib/* ; babel ./src --out-dir lib",
+    "test": "jest",
+    "babel-node": "babel-node"
+  },
+  "devDependencies": {
+    "@types/fs-extra-promise": "^0.0.31",
+    "@types/jest": "^19.2.2",
+    "@types/node": "^7.0.12",
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.6",
+    "jest": "^18.1.0",
+    "nodemon": "^1.11.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "fs-extra-promise": "^1.0.1"
+  }
+}
