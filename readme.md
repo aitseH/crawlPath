@@ -1,4 +1,4 @@
-#usage
+# usage
 
 ```bash
 yarn add crawl-path
@@ -7,7 +7,9 @@ yarn add crawl-path
 
 ```js
 
-let files = new Map<string, string|string[]>()
+import {crawlPath} from 'crawl-path'
+
+let files = new Map
 
 await crawlPath(path.join(__dirname, 'foo'), {
   onDir: async (_files, _path, depth) => {
