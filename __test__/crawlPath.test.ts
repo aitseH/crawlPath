@@ -12,6 +12,7 @@ describe('test', () => {
         },
         onFile: async(file) => {
           console.log(file)
+          return null
         }
       })
 
